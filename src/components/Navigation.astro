@@ -1,8 +1,16 @@
 ---
 const pathName = new URL(Astro.request.url).pathname;
 ---
+
 <div class="nav-links">
     <a class={pathName === "/" ? "active" : undefined} href="/">Home</a>
-    <a class={pathName === "/about/" ? "active" : undefined} href="/about/">About</a>
-    <a class={pathName === "/blog/" ? "active" : undefined} href="/blog/">Blog</a>
+    <a class={pathName === "/about/" ? "active" : undefined} href="/about/"
+        >About</a
+    >
+    <a class={pathName === "/blog/" ? "active" : undefined} href="/blog/"
+        >Blog</a
+    >
+    <a class={pathName === "/tags/" ? "active" : undefined} href="/tags/"
+        >Tags</a
+    >
 </div>
